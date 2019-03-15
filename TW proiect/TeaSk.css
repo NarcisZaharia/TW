@@ -1,9 +1,3 @@
-#myDIV {
-  height: auto;
-  width: 100%;
-  overflow: auto;
-}
-
 #content {
   height: auto;
   width: auto;
@@ -14,21 +8,39 @@
 }
 
 #avatar {
-margin-bottom: 0.3%;
-height: 300px;
-width : auto;
-display: block;
-border: 1px solid #ddd;
-border-radius: 50%;
-padding: 5px;
-border-color: #7d7d7d;
+  margin-bottom: 0.3%;
+  height: 300px;
+  width: auto;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  border-color: #7d7d7d;
+}
+
+#menu {
+  background-color: #ebf5fb;
+  clear: both;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  border-color: #7d7d7d;
+}
+
+#menu p {
+  color: #c0392b;
+}
+
+#menu h2 {
+  color: #800000;
 }
 
 .scrollbar {
-margin-left: 0.3%;
-margin-right: 0.3%;
-margin-top: 0.3%;
-margin-bottom: 0.2%;
+  margin-left: 0.3%;
+  margin-right: 0.3%;
+  margin-top: 0.3%;
+  margin-bottom: 0.2%;
 }
 
 .outer {
@@ -45,22 +57,26 @@ margin-bottom: 0.2%;
 .inner {
   margin-left: auto;
   margin-right: auto;
-  width: 1010px;
-  /*whatever width you want*/
+  width: 1000px;
 }
 
 .rgba {
   background: rgba(215, 215, 233, 0.7);
-  height: 1000px;
-  width: 1000px;
+  height: auto;
+  width: auto;
   text-align: center;
 }
 
 body {
-height : 100% ;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-overflow-x: hidden;
-overflow-y: auto;	
+  background: url(background.jpg) fixed;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
 }
