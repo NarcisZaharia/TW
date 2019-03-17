@@ -1,0 +1,48 @@
+.rgba {  
+  background: rgba(215, 215, 233, 0.3);  
+  height: 700px;
+  width: 1000px;
+  text-align:center;
+}   
+
+
+.centeralignwhite{
+text-align: center;
+color:white;
+}
+
+.colorwhite{
+color:white;
+}
+
+.colorred{
+color:red;
+}
+
+.marginleft-25{
+margin-left:-25px;
+}
+
+.marginleft3{
+margin-left:3px;
+}
+
+.marginleft4{
+margin-left:4px;
+}
+
+.marginleft29{
+margin-left:29px;
+}
+
+.styleleft{
+float: left; 
+height: 370px; 
+width:60%; 
+}
+
+.styleright{
+float: right; 
+height: 370px; 
+width:30%; 
+}
