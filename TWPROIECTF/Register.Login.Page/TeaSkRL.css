@@ -17,18 +17,6 @@ color:white;
 color:red;
 }
 
-.marginleft-25{
-margin-left:-25px;
-}
-
-.marginleft4{
-margin-left:4px;
-}
-
-.marginleft29{
-margin-left:29px;
-}
-
 .styleleft{
 float: left; 
 height: 370px; 
@@ -66,7 +54,16 @@ main .right
   flex:0 1 350px;
 }
 
-#content {
+#contentleft {
+  height: 450px;
+  width: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  white-space: wrap;
+  margin: 1em;
+}
+
+#contentright {
   height: 450px;
   width: auto;
   overflow-x: hidden;
@@ -80,4 +77,12 @@ main .right
   margin-right: 1%;
   margin-top: 0.3%;
   margin-bottom: 0.2%;
+}
+
+.margin20px{
+margin:20px;
+}
+
+.styleregister{
+text-align:right; margin-right:40px;
 }
