@@ -1,0 +1,82 @@
+#content {
+  height: auto;
+  width: auto;
+  background-color: #f1f1f1;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#avatar {
+  margin-bottom: 0.3%;
+  height: 300px;
+  width: auto;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  border-color: #7d7d7d;
+}
+
+#menu {
+  background-color: #ebf5fb;
+  clear: both;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  border-color: #7d7d7d;
+}
+
+#menu p {
+  color: #c0392b;
+}
+
+#menu h2 {
+  color: #800000;
+}
+
+.scrollbar {
+  margin-left: 0.3%;
+  margin-right: 0.3%;
+  margin-top: 0.3%;
+  margin-bottom: 0.2%;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.rgba {
+  background: rgba(215, 215, 233, 0.7);
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+
+body {
+  background: url(background.jpg) fixed;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+}
