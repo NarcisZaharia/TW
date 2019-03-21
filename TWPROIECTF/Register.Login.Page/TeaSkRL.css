@@ -59,7 +59,7 @@ main .right
   width: auto;
   overflow-x: hidden;
   overflow-y: scroll;
-  white-space: wrap;
+  white-space: normal;
   margin: 1em;
 }
 
@@ -68,7 +68,7 @@ main .right
   width: auto;
   overflow-x: hidden;
   overflow-y: scroll;
-  white-space: wrap;
+  white-space: normal;
   margin: 1em;
 }
 
