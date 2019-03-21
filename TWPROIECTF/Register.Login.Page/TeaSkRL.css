@@ -29,6 +29,19 @@ height: 370px;
 width:30%; 
 }
 
+.button{
+  border-radius: 8px;
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
 main
 {
   display: flex;
@@ -85,4 +98,9 @@ margin:20px;
 
 .styleregister{
 text-align:right; margin-right:40px;
+}
+
+a {
+  text-decoration: none;
+  color: cornflowerblue;
 }

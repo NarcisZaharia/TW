@@ -5,7 +5,7 @@ main #id1 {
   flex: 0.1;
 }
 
-main #id2 {  flex: 7;
+main #id2 {
  flex:0 1 800px; 
 background: rgba(215, 215, 233, 0.5);
   text-align: center;}
@@ -21,6 +21,7 @@ main div {
 
 h1 {
   text-align: center;
+  color: black;
 }
 .h1 {
   text-align: center; margin-top: 1px; font-size: 20px;
@@ -32,9 +33,8 @@ h1 {
   height: 300px;
   width: auto;
   display: block;
-  border: 1px solid #ddd;
+  border: 1px solid #7d7d7d;
   border-radius: 50%;
-  border-color: #7d7d7d;
 }
 
 
@@ -53,10 +53,9 @@ h1 {
   background-color: #ebf5fb;
   clear: both;
   display: block;
-  border: 1px solid #ddd;
+  border: 1px solid #7d7d7d;
   border-radius: 4px;
   padding: 5px;
-  border-color: #7d7d7d;
   text-align: center;
 }
 
@@ -81,4 +80,9 @@ display:block; margin-left:auto; margin-right:auto;
 }
 .margintop50{
 margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: cornflowerblue;
 }

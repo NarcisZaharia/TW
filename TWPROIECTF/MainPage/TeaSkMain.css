@@ -58,7 +58,6 @@ main div {
     text-align: center;
 }
 
-
 .scrollbar {
     margin-left: 0.3%;
     margin-right: 0.3%;
@@ -108,9 +107,10 @@ body {
 
 h1 {
     text-align: center;
+    color: black;
 }
 
 a {
-    text-align: center;
     text-decoration: none;
+    color: cornflowerblue;
 }
