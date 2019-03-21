@@ -47,7 +47,18 @@ main div {
 }
 
 
-#menu {
+#menuleft {
+    background-color: #ebf5fb;
+    clear: both;
+    display: block;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 5px;
+    border-color: #7d7d7d;
+    text-align: center;
+}
+
+#menuright {
     background-color: #ebf5fb;
     clear: both;
     display: block;

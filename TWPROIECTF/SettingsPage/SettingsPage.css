@@ -49,7 +49,17 @@ h1 {
 }
 
 
-#menu {
+#menuleft {
+  background-color: #ebf5fb;
+  clear: both;
+  display: block;
+  border: 1px solid #7d7d7d;
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+}
+
+#menuright {
   background-color: #ebf5fb;
   clear: both;
   display: block;
