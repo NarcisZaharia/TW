@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{graphicx}
+\title{Technical Skill Enchancer(TeaSk)}
+\author{Daniel Creanga si Narcis Zaharia}
+\date{April 19, 2019}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\break
+
+\section{Introducere}
+Proiectul reprezinta o aplicatie web care permita utilizatorului sa fie la curent cu cele mai noi evenimente(conferinte, stagii, etc.). Utilizatorii isi vor putea urmarii progresul pe care il fac in anumite limbaje de programare prin asistarea la aceste evenimente si prin anumite actiuni pe care le fac pe GitHub, daca aleg sa isi foloseasca acel cont in aplicatie.
+
+\section{Use Cases}
+Utilizatorul se poate inregistra in aplicatie cu un username unic, un email unic, o parola, un nume si un prenume. Fara cont, utilizatorii nu pot naviga pe pagina principala pe care vor fi afisate. Dupa inregistrare un utilizator isi va putea adauga contul de GitHub in aplicatie, care cu ajutorul API-ului de la GitHub ne va oferi informatii despre nivelul acestuia la anumite limbaje de programare.
+Daca utilizatorul are acces administrativ, acesta va putea adauga, modifica sau sterge evenimente.
+
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{Use-Case-Diagram.png}
+	\caption{Use Case Diagram}
+\end{figure}
+
+\section{Arhitectura aplicatiei}
+Aplicatia va fi scrisa in PHP si JavaScript si va folosi o baza de date MySQL. Aplicatia va fi folosi API-ul de la GitHub pentru a putea sa-i dea un nivel unui user la un anumit limbaj de programare. 
+Aplicatia va folosi o arhitectura de tip Models, Views, Controllers. Astfel aplicatia va avea cate un view, ce consista din html si css pentru fiecare pagina web. Controllerele vor fi raspunde la requesturile facute de paginile web, iar acestea vor folosi datele din Models. 
+Modelele sunt reprezentate prin clasele folosite in aplicatie (Users, Events, Skills, etc.).
+
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{Class-Diagram.png}
+	\caption{Diagrama claselor folosite}
+\end{figure}
+
+Aceleasi modele vor fi folosite si in baza de date, pastrandu-se si un istoric al evenimentelor la care un utilizator a fost si un alt istoric pentru fiecare evolutie a unui utilizator la un anumit skill, pe baza carora se vor afisa statistici.
+
+\end{document}
