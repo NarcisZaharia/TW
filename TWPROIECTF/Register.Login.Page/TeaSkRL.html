@@ -32,22 +32,22 @@ eventual oferind suport pentru 'gamification'. Diversele statistici vor fi dispo
 	</div>		  
 	<div class="right styleright scrollbar" id = "contentright">								
 			<p><b>LOGIN</b></p>	
-				<form action="../MainPage/TeaSkMain.html">
+				<form action="processlogin.php" method = "POST">
 				<div class = "styleregister">
-					<p>Type email: <input type="text" name="FirstName:"></p>
-					<p>Type password: <input type="password" name="Password:"></p>
+					<p><label>Type email: </label><input type="text" id="email" name="email" required></p>
+					<p><label>Type password: </label><input type="password" id="password" name="password" required></p>
 				</div>
 					<input type="submit" value="Login" class="button">
 				</form>
 				 
 				 <p>If you don't have an account please:</p>
 				 <p><b>REGISTER</b></p>
-				 <form action="../MainPage/TeaSkMain.html">
+				 <form action="processregister.php" method = "POST">
 				 <div class = "styleregister">
-					 <p>Type first name: <input type="text" name="FirstName"></p>
-					 <p>Type last name: <input type="text" name="LastName"></p>
-					 <p>Type email: <input type="text" name="FirstName"></p>
-					 <p>Type password: <input type="password" name="LastName"></p>
+					 <p><label>Type first name: </label><input type="text" name="firstname" required></p>
+					 <p><label>Type last name: </label><input type="text" name="lastname" required></p>
+					 <p><label>Type email: </label><input type="text" name="email" required></p>
+					 <p><label>Type password: </label><input type="password" name="password" required></p>
 				</div>
 					<input type="submit" value="Register" class="button">
 				</form>
