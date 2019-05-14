@@ -17,9 +17,10 @@ $num = mysqli_num_rows($result);
 
 if ($num == 1)
 {
+	$_SESSION['email'] = $email;
 	echo 
 		"<script type='text/javascript'>
-		window.location='../MainPage/TeaSkMain.html';
+		window.location='../MainPage/TeaSkMain.php';
 		</script>";
 }
 else
