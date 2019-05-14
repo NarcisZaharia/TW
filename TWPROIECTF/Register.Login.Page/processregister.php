@@ -11,11 +11,12 @@ $lastname = $_POST ['lastname'];
 $email = $_POST ['email'];
 $password = $_POST ['password'];
 
-$s = "select * from users where email = '$email' ";
+$s = " select * from users where email = '$email' ";
 
 $result = mysqli_query($con , $s);
 
 $num = mysqli_num_rows($result);
+
 
 if($num == 1)
 {		
