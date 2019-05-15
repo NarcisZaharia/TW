@@ -28,7 +28,7 @@ else
 	echo 
 		"<script type='text/javascript'>
 		alert('Wrong email/password!');
-		window.location='TeaSkRL.html';
+		window.location='TeaSkRL.php';
 		</script>";
 }
 

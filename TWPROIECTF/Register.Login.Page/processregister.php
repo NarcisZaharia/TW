@@ -22,7 +22,7 @@ if($num == 1)
 {		
 		echo 
 		"<script type='text/javascript'>alert('Email already exist!');
-		window.location='TeaSkRL.html';
+		window.location='TeaSkRL.php';
 		</script>";
 
 }
@@ -33,7 +33,7 @@ else
 	
 	echo 
 		"<script type='text/javascript'>alert('Register succsessfuly!');
-		window.location='TeaSkRL.html';
+		window.location='TeaSkRL.php';
 		</script>";
 }
 
