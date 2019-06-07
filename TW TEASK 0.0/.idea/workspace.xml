@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1cdec956-56a6-4f5c-b7f0-66b0e50331b1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Admin/AdminPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/AdminPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Admin/AdminTeask.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/AdminTeask.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Admin/addjob.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Controllers/addjob.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Admin/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Github_Login/Images/github-login.png" beforeDir="false" afterPath="$PROJECT_DIR$/Github_Login/Images/github-login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Github_Login/SQL/users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Github_Login/SQL/users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/PHOTOS/Me.png" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/Photos/Me.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/PHOTOS/amio.png" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/Photos/amio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/PHOTOS/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/Photos/avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/PHOTOS/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/Photos/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/PHOTOS/news.png" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/Photos/news.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/PHOTOS/spark.png" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/Photos/spark.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/PHOTOS/thales.png" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/Photos/thales.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/TeaSkMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/TeaSkMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/TeaSkMain.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/TeaSkMain.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Controllers/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Register.Login.Page/TeaSkRL.css" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/TeaSkRL.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Register.Login.Page/TeaSkRL.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/TeaSkRL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Register.Login.Page/backgroundlogin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/Photos/backgroundlogin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Register.Login.Page/backlogin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/Photos/backlogin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Register.Login.Page/processlogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Controllers/processlogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Register.Login.Page/processregister.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Controllers/processregister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/PHOTOS/Me.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/PHOTOS/amio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/PHOTOS/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/PHOTOS/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/PHOTOS/news.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/PHOTOS/spark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/PHOTOS/thales.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/SettingsPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/SettingsPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/SettingsPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Views/SettingsPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/adm.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Controllers/adm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/SettingsPage/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/index.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/Views/TeaSkRL.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="76" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/Views/TeaSkMain.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1173">
+              <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/Views/SettingsPage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/Controllers/adm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/Controllers/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/Controllers/processlogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/Models/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="74" lean-forward="true" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/Controllers/processregister.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>log</find>
+      <find>image</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/PageTeaSk/index.php" />
+        <option value="$PROJECT_DIR$/PageTeaSk/SettingsPage/SettingsPage.php" />
+        <option value="$PROJECT_DIR$/PageTeaSk/Controllers/adm.php" />
+        <option value="$PROJECT_DIR$/PageTeaSk/Controllers/logout.php" />
+        <option value="$PROJECT_DIR$/PageTeaSk/Views/TeaSkMain.php" />
+        <option value="$PROJECT_DIR$/PageTeaSk/Views/TeaSkRL.php" />
+        <option value="$PROJECT_DIR$/PageTeaSk/Controllers/processlogin.php" />
+        <option value="$PROJECT_DIR$/PageTeaSk/Views/SettingsPage.php" />
+        <option value="$PROJECT_DIR$/PageTeaSk/Controllers/processregister.php" />
+        <option value="$PROJECT_DIR$/PageTeaSk/Models/User.php" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/TW TEASK 0.0.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TW TEASK 0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TW TEASK 0.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TW TEASK 0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TW TEASK 0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="PageTeaSk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TW TEASK 0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TW TEASK 0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="PageTeaSk" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TW TEASK 0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TW TEASK 0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="PageTeaSk" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TW TEASK 0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TW TEASK 0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="PageTeaSk" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\TW\TW TEASK 0.0\PageTeaSk\Controllers" />
+      <recent name="D:\xampp\htdocs\TW\TW TEASK 0.0\PageTeaSk\Views" />
+      <recent name="D:\xampp\htdocs\TW\TW TEASK 0.0\PageTeaSk\Views\Photos" />
+      <recent name="D:\xampp\htdocs\TW\TW TEASK 0.0" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1cdec956-56a6-4f5c-b7f0-66b0e50331b1" name="Default Changelist" comment="" />
+      <created>1559842678967</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559842678967</updated>
+      <workItem from="1559842681614" duration="7268000" />
+      <workItem from="1559852417461" duration="1157000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8425000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/phpcompatibility.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple_html_dom.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manual/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manual/manual.htm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manual/manual_api.htm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manual/manual_faq.htm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Github_Login/SQL/users.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Github_Login/Images/github-login.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/Views/TeaSkRL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="76" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/Views/TeaSkMain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/Views/SettingsPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/Controllers/adm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/Controllers/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/Controllers/processlogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="74" lean-forward="true" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/Controllers/processregister.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
