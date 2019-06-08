@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34bdc62c-29b0-4959-b79d-50eb6009fc34" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/PageTeaSk/Preferences/answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/Preferences/answer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PageTeaSk/githublogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Github_Login/Images/github-login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/Github_Login/SQL/users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageTeaSk/MainPage/TeaSkMain.php" beforeDir="false" afterPath="$PROJECT_DIR$/PageTeaSk/MainPage/TeaSkMain.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,17 +24,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PageTeaSk/Preferences/Preferences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1924">
+            <state relative-caret-position="1649">
               <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PageTeaSk/Preferences/answer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="881">
-              <caret line="71" column="2" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="2" />
+            <state relative-caret-position="935">
+              <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/MainPage/TeaSkMain.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/githublogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageTeaSk/Register.Login.Page/processlogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="31" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -39,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/login.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="20" lean-forward="true" selection-end-line="129" />
+              <caret line="21" column="20" selection-end-line="129" />
             </state>
           </provider>
         </entry>
@@ -56,16 +87,8 @@
         <option value="$PROJECT_DIR$/PageTeaSk/Preferences/AnswerClass.php" />
         <option value="$PROJECT_DIR$/PageTeaSk/Preferences/Preferences.php" />
         <option value="$PROJECT_DIR$/PageTeaSk/Preferences/answer.php" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/TW TEASK 0.1.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/PageTeaSk/MainPage/TeaSkMain.php" />
+        <option value="$PROJECT_DIR$/PageTeaSk/githublogin.php" />
       </list>
     </option>
   </component>
@@ -81,7 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,13 +111,20 @@
               <item name="TW TEASK 0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="TW TEASK 0.1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TW TEASK 0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TW TEASK 0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="PageTeaSk" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -127,16 +156,18 @@
       <workItem from="1559944475071" duration="1734000" />
       <workItem from="1559998734865" duration="110000" />
       <workItem from="1559998853442" duration="1266000" />
+      <workItem from="1560021792500" duration="2955000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8812000" />
+    <option name="totallyTimeSpent" value="11767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26012793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -168,7 +199,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PageTeaSk/Preferences/Preferences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1924">
+        <state relative-caret-position="1649">
           <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
         </state>
       </provider>
@@ -176,14 +207,35 @@
     <entry file="file://$PROJECT_DIR$/login.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="20" lean-forward="true" selection-end-line="129" />
+          <caret line="21" column="20" selection-end-line="129" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PageTeaSk/Preferences/answer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="71" column="2" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="2" />
+        <state relative-caret-position="935">
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/Register.Login.Page/processlogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/MainPage/TeaSkMain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageTeaSk/githublogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
         </state>
       </provider>
     </entry>

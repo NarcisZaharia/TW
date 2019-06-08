@@ -226,7 +226,7 @@ foreach($ret = $html1->find('a[class=truncate-2-line show-detail-in-modal card-l
     <div id="id3"  >	
       <div id="menuright">
           <p>Connect with:</p>
-          <a href="https://github.com/">GitHub</a><br>
+          <a href="https://github.com/login/oauth/authorize?client_id=2bab198cc3ef8092fc31&scope=repo">GitHub</a><br>
           <a href="https://stackoverflow.com/">StackOverflow</a><br>
           <a href="https://www.linkedin.com/">Linkedln</a><br>
           <a href="https://www.reddit.com/">Reddit</a>
