@@ -216,12 +216,64 @@ foreach($ret = $html1->find('a[class=truncate-2-line show-detail-in-modal card-l
 		</div>
 		
 		<div class = "harddiv">
-			
-			<div class = "hardtext"><img src="PHOTOS/amio.png" alt="amio" class="hardnews"><br><b>Full Stack Developer<br>Stagiu platit</b></div>
-            <div class = "hardtext"><img src="PHOTOS/spark.png" alt="spark" class="hardnews" ><br><b>Conferinta<br>Ora 9:00, sambata</b></div>
-            <div class = "hardtext"><img src="PHOTOS/thales.png" alt="thales" class="hardnews"><br><b>QA Analist<br>Practica de vara</b></div>
-			
-		</div>  
+
+<!--			<div class = "hardtext"><img src="PHOTOS/amio.png" alt="amio" class="hardnews"><br><b>Full Stack Developer<br>Stagiu platit</b></div>-->
+<!--            <div class = "hardtext"><img src="PHOTOS/spark.png" alt="spark" class="hardnews" ><br><b>Conferinta<br>Ora 9:00, sambata</b></div>-->
+<!--            <div class = "hardtext"><img src="PHOTOS/thales.png" alt="thales" class="hardnews"><br><b>QA Analist<br>Practica de vara</b></div>-->
+
+            <?php
+            if ($_SESSION['accessToken'] != "")
+            {
+                $URL = 'https://api.github.com/user';
+
+                $authToken = 'Authorization: token '.$_SESSION['accessToken'];
+                $userAgent = 'User-Agent: TeaSk';
+
+                $c = curl_init();
+                curl_setopt($c, CURLOPT_URL, $URL);
+                curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($c, CURLOPT_HTTPHEADER, array('Accept: application/json', $authToken, $userAgent));
+                $res = curl_exec ($c);
+                curl_close ($c);
+                $data = json_decode($res);
+
+                $following_url = explode('{', $data->following_url);
+                $c = curl_init();
+                curl_setopt($c, CURLOPT_URL, $following_url[0]);
+                curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($c, CURLOPT_HTTPHEADER, array('Accept: application/json', $authToken, $userAgent));
+                $res = curl_exec ($c);
+                curl_close ($c);
+                $following_data = json_decode($res);
+                echo "Following:\n";
+                foreach ($following_data as $following)
+                {
+                    echo "<p><a href=\"".$following->html_url."\">".$following->login."</a></p>";
+                }
+
+
+                $follower_url = explode('{', $data->followers_url);
+                $c = curl_init();
+                curl_setopt($c, CURLOPT_URL, $follower_url[0]);
+                curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($c, CURLOPT_HTTPHEADER, array('Accept: application/json', $authToken, $userAgent));
+                $res = curl_exec ($c);
+                curl_close ($c);
+                $follower_data = json_decode($res);
+                echo "<br>  Followers:\n";
+                foreach ($follower_data as $follower)
+                {
+                    echo "<p><a href=\"".$follower->html_url."\">".$follower->login."</a></p>";
+                }
+
+//                var_dump($data);
+//                echo $_SESSION['accessToken'];
+            }
+
+
+            ?>
+
+		</div>
 	</div>
     <div id="id3"  >	
       <div id="menuright">
