@@ -142,7 +142,21 @@ foreach($ret = $html1->find('a[class=truncate-2-line show-detail-in-modal card-l
 		<input type = "file" name = "img"/>
 		<input type = "submit" name = "submit" />
 		</form>
-		<br>		
+		<br>	
+		<form action = "passchange.php" method = "POST">
+		
+		<p><b><font size = "3">Change password:</font></b></p>
+			
+			 <p>			
+			 <label> <font size = "4">Old Password: </font>
+			 </label><input type="password" id="name1" name="name1" required>
+			 <br>
+			 <label> <font size = "4">New Password: </font>
+			 </label><input type="password" id="name" name="name" required>
+			 <br>
+			 <input type="submit" value="submit" class="button"></p>
+			 
+		</form>
 	</div>
 	
     <div id="id3">

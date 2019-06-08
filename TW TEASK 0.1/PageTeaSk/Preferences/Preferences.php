@@ -94,9 +94,7 @@ $html1 = file_get_html('https://www.bestjobs.eu/ro/locuri-de-munca?keyword=IT&lo
 		mysqli_select_db($con , 'login');
 		
 		//
-		$s1 = 'select type,question,ans1,ans2,ans3,ans4,anscorrect from tests order by type asc';
-
-		
+		$s1 = 'select type,question,ans1,ans2,ans3,ans4,anscorrect from tests where question not in (select question from userstests where email =\''.$email.'\') order by type asc';	
 		$result1 = mysqli_query($con , $s1);
 		
 		//	$data= $result->fetch_array()[3];
@@ -220,11 +218,6 @@ foreach($ret = $html1->find('a[class=truncate-2-line show-detail-in-modal card-l
 			 <br>
 			
 			
-			 <p><label> <font size = 4 color = purple>Answer: </font>
-			 </label><input type='name' id='name' name='name'></p>
-			 
-			 <input type='submit' value='submit' class='button'>
-			 
 			 </form>
 			 </a>";
 			echo "</th>";
@@ -248,6 +241,19 @@ foreach($ret = $html1->find('a[class=truncate-2-line show-detail-in-modal card-l
 			echo "<font size = 5>$line[0]</font>";
 			
 			?>
+		
+			
+			<form action = "answer.php" method = "POST">
+			<p><label> <font size = "4" color = "purple">Question: </font>
+			 </label><input type="name1" id="name1" name="name1" required></p>
+			 			
+			 <p><label> <font size = "4" color = "purple">Answer: </font>
+			 </label><input type="name" id="name" name="name" required></p>
+			 
+			 <input type="submit" value="submit" class="button">
+			 </form>
+			
+			
 			
 			</div>
 			

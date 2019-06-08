@@ -9,7 +9,7 @@ main #id1 {
 }
 
 main #id2 {
-    flex: 0 1 800px;
+    flex: 0 1 900px;
     background: rgba(215, 215, 233, 0.5);
     text-align: center;
 }
