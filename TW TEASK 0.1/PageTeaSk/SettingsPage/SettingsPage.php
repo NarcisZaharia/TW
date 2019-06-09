@@ -146,7 +146,6 @@ foreach($ret = $html1->find('a[class=truncate-2-line show-detail-in-modal card-l
 		<form action = "passchange.php" method = "POST">
 		
 		<p><b><font size = "3">Change password:</font></b></p>
-			
 			 <p>			
 			 <label> <font size = "4">Old Password: </font>
 			 </label><input type="password" id="name1" name="name1" required>
@@ -155,18 +154,17 @@ foreach($ret = $html1->find('a[class=truncate-2-line show-detail-in-modal card-l
 			 </label><input type="password" id="name" name="name" required>
 			 <br>
 			 <input type="submit" value="submit" class="button"></p>
-			 
 		</form>
 	</div>
 	
-    <div id="id3">
-      <div id="menuright">
-        <p>Connect with:</p>
-        <a href="">GitHub</a><br>
-        <a href="">StackOverflow</a><br>
-        <a href="">Linkedln</a><br>
-        <a href="">Reddit</a>
-	</div>
+<!--    <div id="id3">-->
+<!--      <div id="menuright">-->
+<!--        <p>Connect with:</p>-->
+<!--        <a href="">GitHub</a><br>-->
+<!--        <a href="">StackOverflow</a><br>-->
+<!--        <a href="">Linkedln</a><br>-->
+<!--        <a href="">Reddit</a>-->
+<!--	</div>-->
 			<form action = "adm.php" method="POST">
 					<p style = "position:absolute; bottom:0;" ><label> </label><input type="password" name="key" required>
 					<input type="submit" value="ADM" class="button">
