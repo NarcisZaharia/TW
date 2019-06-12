@@ -9,7 +9,6 @@ class User
     private $lastname;
     private $imagename;
     private $image;
-    private $points;
     private $TokenGithub;
     private $isAdmin;
 
@@ -28,8 +27,6 @@ class User
             $this->imagename = $params['imagename'];
         if (isset($params['image']))
             $this->image = $params['image'];
-        if (isset($params['points']))
-            $this->points = $params['points'];
         if (isset($params['TokenGithub']))
             $this->TokenGithub = $params['TokenGithub'];
     }
@@ -75,14 +72,80 @@ class User
     public function isUserAdmin(){
         return $this->isAdmin;
     }
-    public function getPoints() {
-        return $this->points;
+
+
+    public function getTotalPoints()
+    {
+        $con = DataBase::getConection();
+        if ($con->connect_error)
+            die("Connection error: ".$con->connect_error);
+        $stmt = $con->prepare("Select sum(points) from userpoints where email like ?");
+        $stmt->bind_param("s", $this->email);
+        $stmt->bind_result($totalPoints);
+        $stmt->execute();
+        $stmt->fetch();
+        if ($totalPoints)
+            return $totalPoints;
+        else return 0;
     }
-    public function incrementPoints(){
-        $this->points+=1;
+
+    public function getPoints($type)
+    {
+        $con = DataBase::getConection();
+        if ($con->connect_error)
+            die("Connection error: ".$con->connect_error);
+        $stmt = $con->prepare("Select points from userpoints where email like ? and type like ?");
+        $stmt->bind_param("ss", $this->email, $type);
+        $stmt->bind_result($points);
+        $stmt->execute();
+        $stmt->fetch();
+        if ($points)
+            return $points;
+        else return 0;
     }
-    public function decrementPoints(){
-        $this->points-=1;
+
+    public function incrementPoints($type)
+    {
+        $con = DataBase::getConection();
+        if ($con->connect_error)
+            die("Connection error: ".$con->connect_error);
+        $stmt = $con->prepare("Select points from userpoints where email like ? and type like ?");
+        $stmt->bind_param("ss", $this->email, $type);
+        $stmt->bind_result($points);
+        $stmt->execute();
+        if ($stmt->fetch())
+        {
+            $stmt->free_result();
+            $stmt1 = $con->prepare("Update userpoints set points = ? where email like ? and type like ?");
+            $points = $points+1;
+            $stmt1->bind_param("iss", $points, $this->email, $type);
+            $stmt1->execute();
+        }
+        else
+        {
+            $stmt1 = $con->prepare("Insert into userpoints (email, type, points) values(?, ?, ?)");
+            $points = 1;
+            $stmt1->bind_param("ssi", $this->email, $type, $points);
+            $stmt1->execute();
+        }
+    }
+    public function decrementPoints($type){
+        $con = DataBase::getConection();
+        if ($con->connect_error)
+            die("Connection error: ".$con->connect_error);
+        $stmt = $con->prepare("Select points from userpoints where email like ? and type like ?");
+        $stmt->bind_param("ss", $this->email, $type);
+        $stmt->bind_result($points);
+        $stmt->execute();
+        if ($stmt->fetch())
+        {
+            if ($points != 0) {
+                $stmt1 = $con->prepare("Update userpoints set points = ? where email like ? and type like ?");
+                $points = $points + 1;
+                $stmt1->bind_param("iss", $points, $this->email, $type);
+                $stmt1->execute();
+            }
+        }
     }
 
     public function updateDatabase()
@@ -91,8 +154,8 @@ class User
         if ($con->connect_error) {
             die("Connection failed: " . $con->connect_error);
         }
-        $stmt = $con->prepare("Update users set password = ?, imagename = ?, image = ?, points = ?, TokenGithub = ? where email like ? limit 1");
-        $stmt->bind_param("sssiss", $this->password, $this->imagename, $this->image, $this->points, $this->TokenGithub, $this->email);
+        $stmt = $con->prepare("Update users set password = ?, imagename = ?, image = ?, TokenGithub = ? where email like ? limit 1");
+        $stmt->bind_param("sssss", $this->password, $this->imagename, $this->image, $this->TokenGithub, $this->email);
         $stmt->execute();
     }
 
@@ -229,6 +292,23 @@ class User
             }
         }
         return $languages;
+    }
+
+    public function getGithubImage()
+    {
+        $URL = 'https://api.github.com/user';
+
+        $authToken = 'Authorization: token '.$this->TokenGithub;
+        $userAgent = 'User-Agent: TeaSk';
+        $c = curl_init();
+        curl_setopt($c, CURLOPT_URL, $URL);
+        curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($c, CURLOPT_HTTPHEADER, array('Accept: application/json', $authToken, $userAgent));
+        $res = curl_exec ($c);
+        curl_close ($c);
+        $github_data = json_decode($res);
+
+        return $github_data->avatar_url;
     }
 
     public function insertInDatabase()

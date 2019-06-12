@@ -14,9 +14,9 @@ class Admin extends Controller
 
     public function AddJob()
     {
-        if (isset($_POST['event']) && isset($_POST['company']) && isset($_POST['type']) && isset($_POST['href']))
+        if (isset($_POST['event']) && isset($_POST['company']) && isset($_POST['type']) && isset($_POST['href']) && isset($_POST['minPoints']))
         {
-            DataBase::insertJob($_POST['event'], $_POST['company'], $_POST['type'], $_POST['href']);
+            DataBase::insertJob($_POST['event'], $_POST['company'], $_POST['type'], $_POST['href'], $_POST['minPoints']);
         }
         $this->index();
     }

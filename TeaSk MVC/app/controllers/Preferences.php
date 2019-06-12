@@ -13,6 +13,7 @@ class Preferences extends Controller
         if (!isset($_SESSION['user']))
             header('Location: http://localhost/TeaSk MVC/public/login');
         $_SESSION['tests'] = $this->getTests();
+        $_SESSION['top'] = $this->getTop();
         $this->view('Preferences/index');
     }
 
@@ -25,15 +26,14 @@ class Preferences extends Controller
             $answer = $_POST['answer'];
             if (DataBase::isQuestionInDatabase($question)) {
                 $goodAnswer = DataBase::getQuestionAnswer($question);
+                $type = DataBase::getQuestionType($question);
                 if ($goodAnswer === $answer) {
-                    $_SESSION['user']->incrementPoints();
-                    $_SESSION['user']->updateDatabase();
+                    $_SESSION['user']->incrementPoints($type);
                     $_SESSION['user']->updateUsertests($question);
                     $this->index();
                 } else {
-                    if ($_SESSION['user']->getPoints() > 0) {
+                    if ($_SESSION['user']->getTotalPoints() > 0) {
                         $_SESSION['user']->decrementPoints();
-                        $_SESSION['user']->updateDatabase();
                         $_SESSION['user']->updateUsertests($question);
                         $this->index();
                     }
@@ -57,5 +57,21 @@ class Preferences extends Controller
         $_SESSION['page'] = $page;
         $tests = $this->model('Tests', ['page' => $page, 'question' => $question, 'type' => $type, 'email' => $_SESSION['user']->getEmail()]);
         return $tests->getQuestions();
+    }
+
+    public function getTop()
+    {
+        $con = DataBase::getConection();
+        if ($con->connect_error)
+            die("Couldn't connect : ". $con->connect_error);
+        $stmt = $con->prepare("Select distinct email, sum(points) from userpoints group by email order by sum(points) desc limit 3");
+        $top = [];
+        $stmt->execute();
+        for ($i = 0; $i <3; $i++)
+        {
+            $stmt->bind_result($top['email'.$i], $top['points'.$i]);
+            $stmt->fetch();
+        }
+        return $top;
     }
 }

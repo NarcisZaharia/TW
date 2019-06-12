@@ -48,7 +48,7 @@ class Settings extends Controller
             session_start();
             if ($oldPass !== $_SESSION['user']->getPassword())
             {
-                echo $_SESSION['user']->getPassword();
+                echo $_SESSION['user']->getPassword()." ".$oldPass;
                 $this->index(['error' => 'Old password doesn\'t match']);
             }
             else

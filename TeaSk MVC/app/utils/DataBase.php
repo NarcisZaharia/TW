@@ -69,11 +69,11 @@ class DataBase
         if ($con->connect_error) {
             die("Connection failed: " . $con->connect_error);
         }
-        $stmt = $con->prepare("Select firstname, lastname, email, password, isAdmin, imagename, image, points, TokenGithub from `users` where email like ? limit 1");
+        $stmt = $con->prepare("Select firstname, lastname, email, password, isAdmin, imagename, image, TokenGithub from `users` where email like ? limit 1");
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $user_params = array();
-        $stmt->bind_result($user_params['firstname'], $user_params['lastname'], $user_params['email'], $user_params['password'], $user_params['isAdmin'], $user_params['imagename'], $user_params['image'], $user_params['points'], $user_params['TokenGithub']);
+        $stmt->bind_result($user_params['firstname'], $user_params['lastname'], $user_params['email'], $user_params['password'], $user_params['isAdmin'], $user_params['imagename'], $user_params['image'], $user_params['TokenGithub']);
 
         if ($result = $stmt->fetch())
         {
@@ -87,14 +87,14 @@ class DataBase
         }
     }
 
-    public static function insertJob($name, $company, $type, $link)
+    public static function insertJob($name, $company, $type, $link, $minPoints)
     {
         $con = self::getConection();
         if ($con->connect_error) {
             die("Connection failed: " . $con->connect_error);
         }
-        $stmt = $con->prepare("Insert into jobs (name, company, type, href) values (?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $name, $company, $type, $link);
+        $stmt = $con->prepare("Insert into jobs (name, company, type, href, minPoints) values (?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssi", $name, $company, $type, $link, $minPoints);
         $stmt->execute();
     }
 
@@ -134,6 +134,34 @@ class DataBase
         $stmt->bind_result($correct);
         $stmt->execute();
         $stmt->fetch();
-        return$correct;
+        return $correct;
+    }
+
+    public static function getQuestionType($question)
+    {
+        $con = self::getConection();
+        if ($con->connect_error)
+            die("Connection failed: ". $con->connect_error);
+        $stmt = $con->prepare("Select type from tests where question like ?");
+        $stmt->bind_param("s", $question);
+        $stmt->bind_result($type);
+        $stmt->execute();
+        $stmt->fetch();
+        return $type;
+    }
+
+    public static function getUserPoints($email, $type)
+    {
+        $con = self::getConection();
+        if ($con->connect_error)
+            die("Connection failed: ". $con->connect_error);
+        $stmt = $con->prepare("Select points from users where email like ? and type like ?");
+        $stmt->bind_params("ss", $email, $type);
+        $stmt->bind_result($points);
+        $stmt->execute();
+        $stmt->fetch();
+        $stmt->close();
+        $con->close();
+        return $points;
     }
 }

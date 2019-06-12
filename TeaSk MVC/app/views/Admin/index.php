@@ -8,9 +8,8 @@
 <body>
 <main>
     <div id="id1">
-        <p class = "h1"><b><font color = "purple">Welcome:</font> <?php echo $_SESSION['user']->getEmail()."</b></p>
-                        <img src=\"data:image/jpg;base64,".base64_encode($_SESSION['user']->getImage())."\" alt=\"avatar\" id=\"avatar\" class = \"avatarstyle\"/>";
-                ?>
+        <p class = "h1"><b><font color = "purple">Welcome:</font> <?php echo $_SESSION['user']->getFirstname()."</b></p>
+                              <img src='".$_SESSION['user']->getGithubImage()."' alt='avatar' id='avatar' class = 'avatarstyle'/>"; ?>
             </b></p>
         <div id="menuleft">
             <h2><b>Menu:</b></h2>
@@ -35,6 +34,7 @@
                 <p><label>Company:  </label><input type="text" name="company" required></p>
                 <p><label>Type of job/event: </label><input type="text" name="type" required></p>
                 <p><label>Href to site: </label><input type="text" name="href" required></p>
+                <p><label>Minimum points to see job: </label><input type="text" name="minPoints" required></p>
             </div>
             <input type="submit" value="ADD" class="button">
             <br><br>

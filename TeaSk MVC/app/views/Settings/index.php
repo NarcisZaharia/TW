@@ -73,8 +73,9 @@
 <main>
     <div id="id1">
         <p class = "h1"><b><font color = "purple">Welcome:</font>
-                <?php echo $_SESSION['user']->getEmail()."</b></p>
-                        <img src=\"data:image/jpg;base64,".base64_encode($_SESSION['user']->getImage())."\" alt=\"avatar\" id=\"avatar\" class = \"avatarstyle\"/>";
+                <?php echo $_SESSION['user']->getFirstname()."</b></p>";
+                    if (null !== $_SESSION['user']->getTokenGithub())
+                        echo "<img src='".$_SESSION['user']->getGithubImage()."' alt='avatar' id='avatar' class = 'avatarstyle'/>";
                 ?>
         <div id="menuleft">
             <h2><b>Menu:</b></h2>
@@ -93,11 +94,11 @@
 
     <div id="id2" class = "margintop50">
         <p><b><font color = "red" size = "6">Account settings</font></b></p><br><br>
-        <p><b><font size = "3">Upload photo:</font></b></p>
-        <form action = "http://localhost/TeaSk%20MVC/public/settings/changePhoto" method="POST" enctype="multipart/form-data">
-            <input type = "file" name = "img"/>
-            <input type = "submit" name = "submit"/>
-        </form>
+<!--        <p><b><font size = "3">Upload photo:</font></b></p>-->
+<!--        <form action = "http://localhost/TeaSk%20MVC/public/settings/changePhoto" method="POST" enctype="multipart/form-data">-->
+<!--            <input type = "file" name = "img"/>-->
+<!--            <input type = "submit" name = "submit"/>-->
+<!--        </form>-->
         <br>
 
         <form action = "http://localhost/TeaSk%20MVC/public/settings/changePassword" method = "POST">

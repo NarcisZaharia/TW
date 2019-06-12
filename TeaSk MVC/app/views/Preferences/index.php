@@ -10,8 +10,10 @@
     <a href = "../MainPage/TeaskMain.php"><h1><b>TeaSk (Technical Skill Enhancer)</b></h1></a>
   <main>
     <div id="id1">
-	  <p class = "h1"><b><font color = "purple">Welcome:</font> <?php echo $_SESSION['user']->getEmail(); ?></b></p>
-      <?php echo "<img src=\"data:image/jpg;base64,".base64_encode($_SESSION['user']->getImage())."\" alt=\"avatar\" id=\"avatar\" class = \"avatarstyle\"/>"; ?>
+	  <p class = "h1"><b><font color = "purple">Welcome:</font> <?php echo $_SESSION['user']->getFirstname()."</b></p>";
+              if (null !== $_SESSION['user']->getTokenGithub())
+                  echo "<img src='".$_SESSION['user']->getGithubImage()."' alt='avatar' id='avatar' class = 'avatarstyle'/>";
+              ?>
       <div id="menuleft">
           <h2><b>Menu:</b></h2>
           <p><a href = "http://localhost/TeaSk%20MVC/public/home"><b>TeaSk</b></a></p>
@@ -69,7 +71,7 @@
             </div>
 
 			<div id ="contentright">
-			<font size = "5" color = "red">Points: <?php echo $_SESSION['user']->getPoints(); ?></font>
+			<font size = "5" color = "red">Points: <?php echo $_SESSION['user']->getTotalPoints(); ?></font>
 
                 <form action = "http://localhost/TeaSk%20MVC/public/preferences/answerQuestion" method = "POST">
                     <p><label> <font size = "4" color = "purple">Question: </font>
@@ -81,13 +83,22 @@
 
 
                 <?php
-			//afisare limbaje github
+                //afisare top
+                echo "<p>Top 3 utilizatori cu cel mai mare scor:</p>";
 
-                $languages = $_SESSION['user']->getGithubLanguages();
-                echo "<p>Statistici limbaje github:</p>";
-                foreach ($languages as $language_name => $language_value)
-                    echo $language_name.": ".$language_value."<br>    ";
-                ?>  
+                for ($i=0; $i<3; $i++) {
+                    if (isset($_SESSION['top']['email' . $i]) && isset($_SESSION['top']['points' . $i]))
+                        echo $_SESSION['top']['email' . $i] . " cu " . $_SESSION['top']['points' . $i] . " puncte<br>";
+                }
+			    //afisare limbaje github
+                if (null !== $_SESSION['user']->getTokenGithub()) {
+                    $languages = $_SESSION['user']->getGithubLanguages();
+                    echo "<p>Statistici limbaje github:</p>";
+                    foreach ($languages as $language_name => $language_value)
+                        echo $language_name . ": " . $language_value . "<br>    ";
+                }
+
+                ?>
 			</div>
 		</div>
 		</div>

@@ -1,6 +1,4 @@
 <?php
-
-
 class Home extends Controller
 {
     public function index($data = '')
@@ -74,7 +72,7 @@ class Home extends Controller
             $type = '%'.$_GET['type'].'%';
         else $type = '%';
         $_SESSION['page'] = $page;
-        $DBJobs = $this->model('DBJobs', ['page' => $page, 'title' => $title, 'type' => $type]);
+        $DBJobs = $this->model('DBJobs', ['page' => $page, 'title' => $title, 'type' => $type, 'user' => $_SESSION['user']]);
         return $DBJobs->getJobs();
     }
 }
